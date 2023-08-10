@@ -1,0 +1,25 @@
+:root {
+  --accent-color: #000;
+  --bg-color: #fff;
+  --main-font: 'Inter';
+  --main-card-font-weight: 400;
+  --card-title-font-weight: 700;
+  --accent-font: 'PressStart2P';
+  --page-section-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --animation-contour-color: #000;
+  --animation-fill-color: rgb(255 0 0);
+  --body-pattern:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-text-color: var(--bg-color);
+  --text-stroke-color: #fff;
+}
+
+@media (width <= 375px) {
+  :root {
+    --page-section-size: 100%;
+  }
+}

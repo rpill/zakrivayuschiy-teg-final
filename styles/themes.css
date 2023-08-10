@@ -1,0 +1,44 @@
+.theme-dark {
+  --accent-color: #00cc14;
+  --bg-color: #000;
+  --animation-contour-color: #00cc14;
+  --body-pattern:
+    repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #007f0c 0%, #004306 100%);
+  --main-card-font-weight: 465;
+  --card-title-font-weight: 785;
+  --button-text-color: var(--accent-color);
+  --text-stroke-color: var(--accent-color);
+
+}
+
+.theme-light {
+  --accent-color: #000;
+  --bg-color: #fff;
+  --animation-contour-color: #000;
+  --main-card-font-weight: 400;
+  --card-title-font-weight: 700;
+  --body-pattern:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-text-color: var(--bg-color);
+  --text-stroke-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #00cc14;
+    --bg-color: #000;
+    --animation-contour-color: #00cc14;
+    --body-pattern:
+      repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      repeating-linear-gradient(180deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      linear-gradient(180deg, #007f0c 0%, #004306 100%);
+    --main-card-font-weight: 465;
+    --card-title-font-weight: 785;
+    --button-text-color: var(--accent-color);
+    --text-stroke-color: var(--accent-color);
+  }
+}
